@@ -21,7 +21,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.rawgit.com/oliveira-daniel/ava-blackboard-test/6a6bee02/main.css';
+    link.href = 'https://cdn.rawgit.com/oliveira-daniel/ava-blackboard-test/4b55f10e/main.css';
     link.media = 'all';
     head.appendChild(link);
 }
