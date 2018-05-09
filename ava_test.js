@@ -12,3 +12,16 @@ for (var i = 1 ; i <= theCookies.length; i++) {
 }
 
 document.write(aString);
+
+var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://cdn.rawgit.com/oliveira-daniel/ava-blackboard-test/6a6bee02/main.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
