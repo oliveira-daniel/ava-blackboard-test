@@ -91,7 +91,7 @@
 .terminal {
   --color: #0c0;
   text-shadow: 0 0 3px rgba(0, 100, 0, 50);
-  --background: transparent;
+  --background: transparent !important;
 }
 .cmd .cursor.blink {
   -webkit-animation: 1s blink infinite;
@@ -102,6 +102,9 @@
   margin: 0;
 }
 .cmd, .cmd .prompt, .terminal, .terminal .terminal-output > div > div {
-	font-size: calc(var(--size, 1) * 12px);
-	line-height: calc(var(--size, 1) * 16px);
+   font-size: calc(var(--size, 1) * 12px);
+   line-height: calc(var(--size, 1) * 16px);
+}
+.cmd .clipboard {
+   background: transparent !important;
 }
