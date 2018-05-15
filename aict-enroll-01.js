@@ -1,17 +1,20 @@
 
 // Inserir o css
-var cssId = 'myCss';  // you could encode the css path itself to generate id..
-if (!document.getElementById(cssId))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'https://rawgit.com/oliveira-daniel/ava-blackboard-test/master/aict-enroll-01.css';
-    link.media = 'all';
-    head.appendChild(link);
+function getCss(cssId, href) {
+    if (!document.getElementById(cssId)) {
+        var head  = document.getElementsByTagName('head')[0];
+        var link  = document.createElement('link');
+        link.id   = cssId;
+        link.rel  = 'stylesheet';
+        link.type = 'text/css';
+        link.href = href;
+        link.media = 'all';
+        head.appendChild(link);
+    }
 }
+
+getCss('aict-enroll', 'https://rawgit.com/oliveira-daniel/ava-blackboard-test/master/aict-enroll-01.css');
+getCss('jq-terminal', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.14.0/css/jquery.terminal.min.css');
 
 jQuery(function($, undefined) {
   var anim = false;
