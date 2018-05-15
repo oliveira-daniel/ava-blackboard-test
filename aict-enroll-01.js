@@ -13,7 +13,7 @@ function getCss(cssId, href) {
     }
 }
 
-getCss('aict-enroll', 'https://rawgit.com/oliveira-daniel/ava-blackboard-test/master/aict-enroll-01.css');
+getCss('aict-enroll', 'https://cdn.rawgit.com/oliveira-daniel/ava-blackboard-test/6a767aca/aict-enroll-01.css');
 getCss('jq-terminal', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.14.0/css/jquery.terminal.min.css');
 
 jQuery(function($, undefined) {
