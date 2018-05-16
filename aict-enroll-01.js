@@ -107,4 +107,6 @@ jQuery(function($, undefined) {
     
 });
 
-$('.aict-vid-effect, #term_demo').show();
+$(window).bind("load", function() {
+   $('.aict-vid-effect, #term_demo').show();
+});
