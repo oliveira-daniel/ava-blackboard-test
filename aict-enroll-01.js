@@ -103,6 +103,8 @@ jQuery(function($, undefined) {
     }
   );
     
-  $('.aict-vid-effect, #term_demo').show();
+  
     
 });
+
+$('.aict-vid-effect, #term_demo').show();
