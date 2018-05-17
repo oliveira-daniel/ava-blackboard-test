@@ -7,14 +7,14 @@
 
 .aic-text p, .aic-text h1 {
   font-family: 'Roboto Slab', serif;
+  font-size: 1.2em;
 }
 
 .aic-text {
   max-width: 523px;
   width: 60%;
   padding: 10px;
-  font-size: 1.2em;
-  line-height: 1.3em;  
+  line-height: 1.3em;
 }
 
 .aict-vid-effect {
